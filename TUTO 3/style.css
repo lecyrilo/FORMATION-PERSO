@@ -1,0 +1,31 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.item{
+    height: 100px;
+    width: 200px;
+    margin: 5px 5px 5px 5px;
+    border: 6px solid rgb(220, 181, 50);
+    border-radius: 10px;
+    background: cornflowerblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    color: deeppink;
+}
+.item:hover{
+    background-color: rgb(6, 155, 91);
+    opacity: 0.8;
+}
+.item:active{
+    background-color: beige;
+}
