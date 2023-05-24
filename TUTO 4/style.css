@@ -2,45 +2,103 @@
     padding: 0;
     margin: 0;
 }
+
+html, body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
 .header{
+    height: 100px;
     background: rgb(228, 42, 5);
     text-align: center;
 }
+
+.header, .container, .aside1, .aside2, .footer{
+    padding: 0.5em;
+    margin: 0.5em;
+    border-radius: 10px;
+}
+
 .wrapper{
     display: flex;
     flex-direction: row;
     justify-content:space-around;
 }
+
 .container {
-    padding: 0px 10px 0px 10px ;
-    height: 100vh;
-    width: 50%;
+    height: 100%;
     background: cornflowerblue;
-    order: 3;
-    flex-grow: 1;
+    order: 2;
+    text-align: justify;
 }
+
 .aside1{
-    height: 100vh;
-    width: 15%;
     background: gold;
     order: 1;
-    text-align: center;
-    flex-grow: 0;
 }
+
 .aside2{
-    height: 100vh;
-    width: 15%;
     background: rgb(239, 40, 156);
     order: 3;
-    text-align: center;
-    flex-grow: 0;
 }
+
 .footer{
+    height: 80px;
     background: lawngreen;
-    text-align: center;
 }
-.header, .container, .aside1, .aside2, .footer{
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .wrapper{
+    flex-direction: column;
 }
+    .container {
+        height: 100%;
+        background: cornflowerblue;
+        order: 1;
+        text-align: justify;
+    }
+
+    .aside1{
+        height: 50vh;
+        background: gold;
+        order: 2;
+        /* text-align: center; */
+    }
+
+    .aside2{
+        height: 50vh;
+        background: rgb(228, 42, 154);
+        order: 2;
+        /* text-align: center; */
+    }
+}
+
+@media screen and (max-width:767px) {
+    .wrapper{
+        flex-direction: column;
+    }
+        .container {
+            height: 100%;
+            background: cornflowerblue;
+            order: 1;
+            text-align: justify;
+        }
+        .aside1{
+            height: 50vh;
+            background: gold;
+            order: 2;
+            /* text-align: center; */
+        }
+        .aside2{
+            height: 50vh;
+            background: rgb(228, 42, 154);
+            order: 2;
+            /* text-align: center; */
+                    }
+}   
+
+                
